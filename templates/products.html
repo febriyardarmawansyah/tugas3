@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Warung Segar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <div class="container mt-5">
+        <h1 class="text-center">My Produks</h1>
+        <div class="row mt-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.almrsal.com/wp-content/uploads/2014/06/fresh-vegetables.jpg" class="card-img-top" alt="Vegetables">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Vegetables</h5>
+                        <p class="card-text">High-quality, fresh vegetables for your daily needs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://5.imimg.com/data5/UL/ES/MY-45353253/organic-fruit.png" class="card-img-top" alt="Fruits">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Fruits</h5>
+                        <p class="card-text">Delicious, organic fruits directly from the farm.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0611/3856/7410/files/Website-photos26_1400x.jpg?v=1645382928" class="card-img-top" alt="Meat">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Meat</h5>
+                        <p class="card-text">Top-grade meat for your special occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Warung Segar - All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
